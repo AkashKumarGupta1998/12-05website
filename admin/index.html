@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKASH KUMAR GUPTA | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Navigation -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-text">AKASH KUMAR GUPTA</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Akash</span></h1>
+                <h2 class="hero-subtitle">Your Profession</h2>
+                <p class="hero-description">Short professional tagline that describes you</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>Detailed introduction about yourself, your background, and your passions. Highlight your academic journey and professional aspirations.</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skills-container" id="skills-container">
+                            <!-- Skills will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-container" id="timeline-container">
+                    <!-- Timeline items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Project cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section blog">
+            <h2 class="section-title">Latest Posts</h2>
+            <div class="blog-posts" id="blog-posts">
+                <!-- Blog posts will be loaded from external JSON -->
+            </div>
+            <div class="blog-controls">
+                <button id="new-post-btn" class="btn btn-primary">Create New Post</button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">YourName</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#experience" class="footer-link">Experience</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#blog" class="footer-link">Blog</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Blog Post Modal -->
+    <div class="modal" id="post-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create New Post</h2>
+            <form id="post-form">
+                <div class="form-group">
+                    <input type="text" id="post-title" placeholder="Post Title" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="post-content" rows="10" placeholder="Write your post here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="post-tags" placeholder="Tags (comma separated)">
+                </div>
+                <button type="submit" class="btn btn-primary">Publish Post</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
