@@ -1,0 +1,128 @@
+/* Admin Specific Styles */
+.admin-container {
+    min-height: 100vh;
+    background-color: var(--darker-bg);
+}
+
+.login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: var(--dark-bg);
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: var(--box-shadow);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.admin-content {
+    display: flex;
+    gap: 30px;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: var(--dark-bg);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.admin-main {
+    flex: 1;
+    background-color: var(--dark-bg);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.post-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.post-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: var(--transition);
+}
+
+.post-list li:hover {
+    background-color: rgba(108, 92, 231, 0.1);
+}
+
+.post-list li.active {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-danger {
+    background-color: var(--error-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Quill Editor Overrides */
+.ql-toolbar {
+    background-color: var(--light-text);
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.ql-container {
+    background-color: var(--light-text);
+    border-radius: 0 0 4px 4px !important;
+    color: var(--dark-bg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .admin-content {
+        flex-direction: column;
+    }
+    
+    .admin-sidebar {
+        width: 100%;
+    }
+}
